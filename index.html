@@ -1,41 +1,247 @@
+
 <!DOCTYPE html>
 <html>
-  
-  
+  <head>
+    <!--<meta charset="UTF-8"> -->
+    <title>Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<link href="bootstrap_3/css/bootstrap.min.css" rel="stylesheet">
+	  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css">
+		<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
 
-  
-  
-  
-<body>
-  
-  
-  
-  <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-  <li><a data-toggle="tab" href="#menu1">Projects</a></li>
-  <li><a data-toggle="tab" href="#menu2">Resume</a></li>
-</ul>
+		<style type="text/css">
+		body{
+			padding-left:-40px;
+			padding-right:-40px;
+			padding-top:-100px;
 
-<div class="tab-content">
-  <div id="home" class="tab-pane fade in active">
-    <h3>Home</h3>
-    <p>Website is under construction.</p>
-  </div>
-  <div id="menu1" class="tab-pane fade">
-    <h3>.</h3>
-    <p>.</p>
-  </div>
-  <div id="menu2" class="tab-pane fade">
-    <h3>.</h3>
-    <p>.</p>
-  </div>
+		}
+		.jumbotron {
+		    position: relative;
+		    background: #000 url("");
+		    width: 100%;
+		    height: 100%;
+			color: #ddd;
+			font-size: 20px;
+		    background-size: cover;
+		    overflow: hidden;
+		}
+		.jumbotron h3{
+		    color: #fff !important
+		}
+		</style>
+  </head>
+
+
+<!-- ********************** Navbar ******************* -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class = "container">
+	    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="#about"><i class="fa fa-home fa-lg"></i></a></span> </a>
+
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="navbar-collapse collapse navHeaderCollapse">
+	    <ul class="nav navbar-nav">
+		  <li class = ""><a href="#research"><i class="fa fa-file-o fa-fw"></i> Research</a></li>
+		  <li class = ""><a href="#papers"><i class="fa fa-pencil-square-o fa-fw"></i> Papers</a></li>
+		  <li class = ""><a href="Files/Resume.pdf"><i class="fa fa-file-text-o fa-lg"></i> Resume</a></li>
+		  <li class = ""><a href="https://github.com/nancylu799"><i class="fa fa-github-square fa-lg"></i></a></li>
+
+	  </div>
+	  </div><!-- /.navbar-collapse -->
+	</div>
+
+<!-- *************** Body ***************** -->
+<div class="jumbotron">
+
+  	<div class="container">
+		<br><br><br><br><br>
+		<h1><center> Nancy Lu</center></h1>
+		<h3><center>Yale Class of 2020 </center></h3>
+		<h3><center>nancy.lu@yale.edu </center></h3>
+		<br>
+	</div>
 </div>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  
 
+<!-- *************** About Me ***************** -->
+<div class ="container">
+	<a name = "about"></a>
+	<div class="clearfix"></div>
+	<br><br>
+	<hr class="featurette-divider">
+	<div  class="media">
+		<div  class="pull-left media-top">
+			<br>  <br> <br>
+			<img class="img-rounded"  src="headshot.jpg" alt="..."  width="200", height="auto"></img>
+		</div>
+		<h2> About Me </h2>
+	<div class="media-body">
+	<p> I am a junior at Yale University completing a double major in biology and math. I am particularly interested in computational biology (especially in relation in genomics) as well as biostatistics. Currently, my research in the Pyle lab focuses on using computational techniques to analyze covariate base pairs in RNA structure, and what that can tell us about evolutionary history.
+	</p>
+
+
+	<p> This page contains some of my work at Yale. It is currently under construction.
+	</p>
+	</div>
+	</div>
+
+	<!-- *************** Research ***************** -->
+	<a name = "research"></a>
+	<div class="clearfix"></div>
+	<br><br>
+    <hr class="featurette-divider">
+	<h2> Research Papers and Publications</h2>
+
+
+	<div class="media">
+	  <div class="pull-left media-top">
+	  <img class="img-rounded" src="" alt="..." height="150" width="150"></img>
+	 </div>
+	 <p>
+	 <div class="media-body">
+	 <h4 class="media-heading">Model to Predict Alzheimer's Disease
+</h4>
+	This is my final project for CBB 472: Biomedical Data Science (Mining and Modeling). Our team used SNP annotation tools alongside GWAS studies to predict a patient's Alzheimer's disease risk.
+
+	 <p> <a href="452.pdf">[PDF]</a> </p>
+		</div>
+	</div>
+
+
+
+	<div class="media">
+	  <div class="pull-left media-top">
+	  <img class="img-rounded" src="" alt="..." height="150" width="150"></img>
+	 </div>
+	 <p>
+	 <div class="media-body">
+	 <h4 class="media-heading">Analyzing Effects of Mental Health in Bariatric Surgery Patients
+</h4>
+	Since the summer of 2016, I have been working at the Magee-Womens Research Center on analyzing outcomes of bariatric surgery, and how these outcomes relate to mental health factors. Through statistical analyses including repeated-measured ANCOVA analyses, we analyzed a large cohort of bariatric surgery outcomes and found that former physical, mental, or sexual abuse played a significant role in surgical outcomes. Paper to be published in fall 2018. 
+	 <p> <a href="http://www.combinatorics.org/ojs/index.php/eljc/issue/view/Volume25-1">[Journal]</a> <a href="https://arxiv.org/abs/1708.03069">[arXiv]</a> <a href="Files/manuscript.pdf">[PDF]</a> </p>
+		</div>
+	</div>
+
+
+	<div class="media">
+	  <div class="pull-left media-top">
+	  <img class="img-rounded" src="Files/width.png" alt="..." height="150" width="150"></img>
+	 </div>
+	 <p>
+	 <div class="media-body">
+	 <h4 class="media-heading">Creating Validated Mental Health Scales for Children
+</h4>
+To help answer the question when children should seek help for mental health issues, I helped create 2 validated scales through factor analysis and extensive focus groups and prior research. This research was presented at the American Psychological Society's annual conference in Boston (May 2017).
+	 <p> <a href="Files/670_class_report.pdf">[PDF]</a> </p>
+		</div>
+	</div>
+
+	<div class="media">
+	  <div class="pull-left media-top">
+	  <img class="img-rounded" src="Files/singleton.png" alt="..." height="150" width="150"></img>
+	 </div>
+	 <p>
+	 <div class="media-body">
+	 <h4 class="media-heading">Engineering Plastic-Digesting Bacteria
+</h4>
+I was part of Yale's iGEM (international Genomically Engineered Machinery) team in the summer of 2017. Our goal was to genetically a bacteria capable of digesting plastics efficiently in a landfill situation. To do this, multiple non-native pathways were engineered into E.coli. The team will compete later this year. Our poster at the Yale Undergraduate Research Conference is linked here. (Summer 2017) 
+	 <p> <strong>(Fall 2017)</strong>   <a href="Files/senior_paper.pdf">[PDF]</a> </p>
+		</div>
+	</div>
+
+	
+
+
+
+
+
+
+
+	<!-- *************** Lessons ***************** -->
+	<a name = "papers"></a>
+	<div class="clearfix"></div>
+	<br><br>
+    <hr class="featurette-divider">
+	<h2> Other Presentations and Papers</h2>
+
+	<div class="media">
+	  <div class="pull-left media-top">
+	  <img class="img-rounded" src="Files/network.png" alt="..." height="150" width="150"></img>
+	 </div>
+	 <p>
+	 <div class="media-body">
+	 <h4 class="media-heading">Analyzing LGBT Rights in Israel
+</h4>
+For my final project in "State and Society of Israel," I wrote about the state of LGBT rights in Israel. I was particularly interested in the interaction between the publicly Jewish society and the progressive political changes in Israel. This paper received third place for the Yale Acheson Prize in International Relations. (June 2018)
+
+	 <p> <a href="http://yris.yira.org/acheson-prize/2453">[Webpage]</a> </p>
+		</div>
+	</div>
+
+	<div class="media">
+	  <div class="pull-left media-top">
+	  <img class="img-rounded" src="Files/murray.png" alt="..." height="150" width="150"></img>
+	 </div>
+	 <p>
+	 <div class="media-body">
+	 <h4 class="media-heading">Mitigating Effects of the Opioid Epidemic
+</h4>
+	 I wrote a piece on the opioid epidemic in the Yale Global Health Review. One of my close friends passed away from opioid overdose, and this issue has become one of the most pressing public health problems in the US. I have been involved with YGHR in various capacities since fall 2016. 
+
+	 <p> <a href="https://yaleglobalhealthreview.com/2017/05/14/an-examination-of-the-opioid-crisis-methods-of-mitigating-pain/">[Webpage]</a> </p>
+		</div>
+	</div>
+
+
+
+
+	<div class="media">
+	  <div class="pull-left media-top">
+	  <img class="img-rounded" src="Files/random.gif" alt="..." height="150" width="150"></img>
+	 </div>
+	 <p>
+	 <div class="media-body">
+	 <h4 class="media-heading">Yale-China Internship 
+</h4>
+	During this internship, I volunteered at ..., a nonprofit in Hong Kong that...
+
+	 <p> <a href="Files/khintchine.pdf">[Slides]</a> </p>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="media">
+	  <div class="pull-left media-top">
+	  <img class="img-rounded" src="Files/jac.png" alt="..." height="150" width="150"></img>
+	 </div>
+	 <p>
+	 <div class="media-body">
+	 <h4 class="media-heading"> First Foray in Genetic Engineering
+</h4>
+	This was my first foray into 
+	 <p> <strong>(Summer 2017)</strong>  <a href="Files/jacobians-graphs.pdf">[Slides]</a> </p>
+		</div>
+	</div>
+
+
+
+
+	
+
+	<!-- ***************** Footer ********************** -->
+	<hr class="featurette-divider">
+	<footer>
+		<p class="text-center"> Updated summer 2018 </p>
+	</footer>
+</div>
 </body>
-  
-  
 </html>
