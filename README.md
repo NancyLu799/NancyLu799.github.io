@@ -1,2 +1,2 @@
-#NancyLu799.github.io
-Persoal Website
+# NancyLu799.github.io
+Personal Website
